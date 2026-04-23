@@ -1,74 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#0D0208">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/header"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        android:background="#1A001A"
-        android:gravity="center_vertical">
+        android:text="Hello, World!"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="JINXD AI"
-            android:textColor="#FF3333"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:letterSpacing="0.2" />
-
-        <ImageButton
-            android:id="@+id/settingsButton"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@android:drawable/ic_menu_manage"
-            android:contentDescription="Settings" />
-    </LinearLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/chatRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/inputArea"
-        android:layout_below="@+id/header"
-        android:padding="8dp"
-        android:clipToPadding="false" />
-
-    <LinearLayout
-        android:id="@+id/inputArea"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="#1A001A">
-
-        <EditText
-            android:id="@+id/inputField"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Speak into the abyss..."
-            android:textColor="#FFFFFF"
-            android:textColorHint="#555555"
-            android:background="#2D002D"
-            android:padding="12dp"
-            android:layout_marginEnd="8dp" />
-
-        <ImageButton
-            android:id="@+id/sendButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="#3D0000"
-            android:src="@android:drawable/ic_menu_send"
-            android:contentDescription="Send" />
-    </LinearLayout>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
