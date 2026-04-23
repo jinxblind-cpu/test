@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'Com.jinxdai.app'
+    namespace 'com.example.myapp'
     compileSdk 34
 
     defaultConfig {
-        applicationId "Com.jinxdai.app"
+        applicationId "com.example.myapp"
         minSdk 24
         targetSdk 34
         versionCode 1
