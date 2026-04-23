@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Myapp" parent="Theme.MaterialComponents.DayNight.DarkActionBar" />
-    <style name="Theme.Myapp.NoActionBar">
+    <style name="Theme.Hello" parent="Theme.MaterialComponents.DayNight.DarkActionBar" />
+    <style name="Theme.Hello.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
